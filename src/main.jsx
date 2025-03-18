@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
-import { Home, About, Services, Contact, Login, ForgetPassword, SignUp } from "./pages"
+import { Home, About, Services, Contact, Login, Course, ForgetPassword, SignUp } from "./pages"
 import Layout from "./Layout"
 
 const router = createBrowserRouter(
@@ -10,6 +10,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<Layout />} >
             <Route path="" element={<Home />} />
             <Route path="about" element={<About />} />
+            <Route path="course" element={<Course />} />
             <Route path="services" element={<Services />} />
             <Route path="contact" element={<Contact />} />
             <Route path="login" element={<Login />} />

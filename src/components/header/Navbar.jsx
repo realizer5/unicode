@@ -13,19 +13,19 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <ul className="flex space-x-8 font-medium text-base">
-                    <li className="w-14">
+                    <li className="">
                         <NavLink to="/" className={({ isActive }) => `${isActive ? "text-indigo-700 font-semibold" : "text-gray-700 hover:text-indigo-600"} transition-colors duration-200`}> Home </NavLink>
                     </li>
-                    <li className="w-14">
-                        <NavLink to="/courses" className={({ isActive }) => `${isActive ? "text-indigo-700 font-semibold" : "text-gray-700 hover:text-indigo-600"} transition-colors duration-200`}> Courses </NavLink>
+                    <li className="">
+                        <NavLink to="/course" className={({ isActive }) => `${isActive ? "text-indigo-700 font-semibold" : "text-gray-700 hover:text-indigo-600"} transition-colors duration-200`}> Course </NavLink>
                     </li>
-                    <li className="w-14">
+                    <li className="">
                         <NavLink to="/services" className={({ isActive }) => `${isActive ? "text-indigo-700 font-semibold" : "text-gray-700 hover:text-indigo-600"} transition-colors duration-200`}> Services </NavLink>
                     </li>
-                    <li className="w-14">
+                    <li className="">
                         <NavLink to="/about" className={({ isActive }) => `${isActive ? "text-indigo-700 font-semibold" : "text-gray-700 hover:text-indigo-600"} transition-colors duration-200`}> About </NavLink>
                     </li>
-                    <li className="w-14">
+                    <li className="">
                         <NavLink to="/Contact" className={({ isActive }) => `${isActive ? "text-indigo-700 font-semibold" : "text-gray-700 hover:text-indigo-600"} transition-colors duration-200"}`}> Contact </NavLink>
                     </li>
                 </ul>
